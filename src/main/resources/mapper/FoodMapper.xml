@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.guet.zti.web.dao.FoodDao">
+
+    <resultMap id="foodResultMap" type="Food">
+        <id property="foodId" column="food_id"></id>
+        <result property="foodUrlId" column="food_url_id"></result>
+        <result property="foodName" column="food_name"></result>
+        <result property="introduction" column="introduction"></result>
+        <result property="like_num" column="likeNum"></result>
+        <result property="place_url_id" column="placeUrlId"></result>
+    </resultMap>
+
+    <insert id="addFood" parameterType="Food">
+        insert into t_food(food_url_id,food_name,introduction,like_num,place_url_id)
+        values(#{foodUrlId},#{foodName},#{introduction},#{likeNum},#{placeUrlId});
+    </insert>
+
+    <select id="findFoodByUrlId" parameterType="java.lang.String" resultType="Food">
+        select * from t_food where food_url_id=#{foodUrlId};
+    </select>
+
+    <select id="getFoodsByPlaceUrlId" parameterType="java.lang.String" resultType="Food">
+        select * from t_food where place_url_id=#{placeUrlId};
+    </select>
+
+</mapper>

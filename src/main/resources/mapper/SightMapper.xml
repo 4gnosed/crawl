@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.guet.zti.web.dao.SightDao">
+
+    <resultMap id="sightResultMap" type="Sight">
+        <id property="sightId" column="sight_id"></id>
+        <result property="sightName" column="sight_name"></result>
+        <result property="sightUrlId" column="sight_url_id"></result>
+        <result property="address" column="address"></result>
+        <result property="openTime" column="open_time"></result>
+        <result property="score" column="score"></result>
+        <result property="introduction" column="introduction"></result>
+        <result property="placeUrlId" column="place_url_id"></result>
+        <result property="rank" column="rank"></result>
+        <result property="phone" column="phone"></result>
+        <result property="website" column="website"></result>
+    </resultMap>
+
+    <insert id="addSight" parameterType="Sight">
+        insert into t_sight(sight_name,sight_url_id,address,open_time,score,introduction,place_url_id,rank,phone,website)
+        values(#{sightName},#{sightUrlId},#{address},#{openTime},#{score},#{introduction},#{placeUrlId},#{rank},#{phone},#{website});
+    </insert>
+
+    <select id="findSightBySightUrlId" parameterType="java.lang.String" resultType="Sight">
+        select * from t_sight where sight_url_id = #{sightUrlId};
+    </select>
+
+    <select id="getAllPlaceUrlId" resultType="java.lang.String">
+        select distinct place_url_id from t_sight;
+    </select>
+
+    <select id="getSightsByPage" resultType="Sight">
+        SELECT * from t_sight where place_url_id=#{placeUrlId}
+        order by score desc
+        limit #{start},#{pageSize};
+    </select>
+
+    <select id="getTotalPage" parameterType="java.lang.String" resultType="java.lang.Integer">
+        select count(*) from t_sight where place_url_id =#{placeUrlId};
+    </select>
+</mapper>

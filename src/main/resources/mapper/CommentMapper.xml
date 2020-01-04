@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.guet.zti.web.dao.CommentDao">
+
+    <resultMap id="commentResultMap" type="Comment">
+        <id property="commentId" column="comment_id"></id>
+        <result property="userName" column="user_name"></result>
+        <result property="content" column="content"></result>
+        <result property="publishTime" column="publish_time"></result>
+        <result property="score" column="score"></result>
+        <result property="sightUrlId" column="sight_url_id"></result>
+    </resultMap>
+
+    <insert id="addComment" parameterType="Comment">
+        insert into t_comment(user_name,content,publish_time,score,sight_url_id)
+        values(#{userName},#{content},#{publishTime},#{score},#{sightUrlId});
+    </insert>
+
+    <select id="getCountBySightUrlId" parameterType="java.lang.String" resultType="java.lang.Integer">
+        select count(*) from t_comment where sight_url_id=#{sightUrlId};
+    </select>
+
+    <select id="getCommentByPageNum" resultType="Comment">
+        select * from t_comment where sight_url_id=#{sightUrlId} limit #{start},#{pageSize};
+    </select>
+</mapper>
