@@ -1,0 +1,2681 @@
+S:\Java\jdk1.8.0_202\bin\java.exe -ea -Didea.test.cyclic.buffer.size=1048576 "-javaagent:S:\JetBrains\IntelliJ IDEA 2019.2.3\lib\idea_rt.jar=58758:S:\JetBrains\IntelliJ IDEA 2019.2.3\bin" -Dfile.encoding=UTF-8 -classpath "S:\JetBrains\IntelliJ IDEA 2019.2.3\lib\idea_rt.jar;S:\JetBrains\IntelliJ IDEA 2019.2.3\plugins\junit\lib\junit-rt.jar;S:\JetBrains\IntelliJ IDEA 2019.2.3\plugins\junit\lib\junit5-rt.jar;S:\Java\jdk1.8.0_202\jre\lib\charsets.jar;S:\Java\jdk1.8.0_202\jre\lib\deploy.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-32.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;S:\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;S:\Java\jdk1.8.0_202\jre\lib\javaws.jar;S:\Java\jdk1.8.0_202\jre\lib\jce.jar;S:\Java\jdk1.8.0_202\jre\lib\jfr.jar;S:\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;S:\Java\jdk1.8.0_202\jre\lib\jsse.jar;S:\Java\jdk1.8.0_202\jre\lib\management-agent.jar;S:\Java\jdk1.8.0_202\jre\lib\plugin.jar;S:\Java\jdk1.8.0_202\jre\lib\resources.jar;S:\Java\jdk1.8.0_202\jre\lib\rt.jar;F:\MyCode\IdeaProjects\zti\target\test-classes;F:\MyCode\IdeaProjects\zti\target\classes;C:\Users\gnosed\.m2\repository\org\springframework\spring-context\4.2.4.RELEASE\spring-context-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-aop\4.2.4.RELEASE\spring-aop-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-beans\4.2.4.RELEASE\spring-beans-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-expression\4.2.4.RELEASE\spring-expression-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\us\codecraft\webmagic-core\0.7.3\webmagic-core-0.7.3.jar;C:\Users\gnosed\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\gnosed\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\gnosed\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;C:\Users\gnosed\.m2\repository\us\codecraft\xsoup\0.3.1\xsoup-0.3.1.jar;C:\Users\gnosed\.m2\repository\org\assertj\assertj-core\1.5.0\assertj-core-1.5.0.jar;C:\Users\gnosed\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\gnosed\.m2\repository\org\jsoup\jsoup\1.10.3\jsoup-1.10.3.jar;C:\Users\gnosed\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\gnosed\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\gnosed\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\gnosed\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\gnosed\.m2\repository\us\codecraft\webmagic-extension\0.7.3\webmagic-extension-0.7.3.jar;C:\Users\gnosed\.m2\repository\redis\clients\jedis\2.9.0\jedis-2.9.0.jar;C:\Users\gnosed\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-web\4.2.4.RELEASE\spring-web-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\com\mchange\c3p0\0.9.5.2\c3p0-0.9.5.2.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-webmvc\4.2.4.RELEASE\spring-webmvc-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-jdbc\4.2.4.RELEASE\spring-jdbc-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-tx\4.2.4.RELEASE\spring-tx-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-orm\4.2.4.RELEASE\spring-orm-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar;C:\Users\gnosed\.m2\repository\com\google\protobuf\protobuf-java\2.6.0\protobuf-java-2.6.0.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-core\4.2.4.RELEASE\spring-core-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\aspectj\aspectjweaver\1.6.5\aspectjweaver-1.6.5.jar;C:\Users\gnosed\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\gnosed\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\gnosed\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\gnosed\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-test\4.2.4.RELEASE\spring-test-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-instrument\4.2.4.RELEASE\spring-instrument-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-context-support\4.2.4.RELEASE\spring-context-support-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-aspects\4.2.4.RELEASE\spring-aspects-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\projectlombok\lombok\1.18.2\lombok-1.18.2.jar;C:\Users\gnosed\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\gnosed\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\gnosed\.m2\repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;C:\Users\gnosed\.m2\repository\com\mchange\mchange-commons-java\0.2.11\mchange-commons-java-0.2.11.jar;C:\Users\gnosed\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar;C:\Users\gnosed\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar;C:\Users\gnosed\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar;C:\Users\gnosed\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\gnosed\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\gnosed\.m2\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;C:\Users\gnosed\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-websocket\4.2.4.RELEASE\spring-websocket-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\org\springframework\spring-messaging\4.2.4.RELEASE\spring-messaging-4.2.4.RELEASE.jar;C:\Users\gnosed\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\gnosed\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\gnosed\.m2\repository\com\alibaba\fastjson\1.2.49\fastjson-1.2.49.jar;C:\Users\gnosed\.m2\repository\org\mybatis\mybatis\3.5.0\mybatis-3.5.0.jar;C:\Users\gnosed\.m2\repository\org\mybatis\mybatis-spring\2.0.1\mybatis-spring-2.0.1.jar;C:\Users\gnosed\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar" com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit4 cn.edu.guet.zti.web.webmagic.SpiderSight,crawlAllPlacesAllSights
+
+Bad pool size config, start 3 < min 10. Using 10 as start. - [WARN] [2019-12-12 23:17:17:130] 
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\CghzfVWwtayAcRE2ABaIuxjYffE235_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\100q090000003q3gw7310_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\100p060000001l8i190BE_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\e65281832d744099afaf7039a31a5421_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\100g060000001l8hzBE9D_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\100t060000001l8hu133E_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\100g060000001l8hzBE9D_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\2888\100t060000001l8hu133E_C_364_206.jpg
+process request Request{url='https://you.ctrip.com/sight/guilin28/2888.html', method='null', extras=null, priority=0, headers={}, cookies={}} error - [ERROR] [2019-12-12 23:17:24:253] 
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+### The error may exist in file [F:\MyCode\IdeaProjects\zti\target\classes\mapper\SightMapper.xml]
+### The error may involve cn.edu.guet.zti.web.dao.SightDao.addSight-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_sight(sight_name,sight_url_id,address,open_time,score,introduction,place_url_id,rank,phone,website)         values(?,?,?,?,?,?,?,?,?,?);
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+; SQL []; Data truncation: Data too long for column 'open_time' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy20.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy27.addSight(Unknown Source)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.persistentBasicInfo(PersistentSightPipeline.java:87)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.process(PersistentSightPipeline.java:41)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:975)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:392)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 15 more
+景点已存在：22079
+
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\350p180000013x80v4D56_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\CggYGVZztWeAHWcjADCY2xj_5_8960_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\CggYHFXf_7GAb-qHAAHXNURP7CA621_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\CggYHVXf_7CAd_XuAAL2IIr0vF8969_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\CggYHlXf_66Ab9EaAAJLlr5bbV4242_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\CggYHFXf_6yADpaRAAWbFOkYBtQ698_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\CggYHlY5wiqAesejAAMyZYMzJBI876_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\guilin28\sight\5925\100m060000001zasqCC68_C_422_236.jpg
+process request Request{url='https://you.ctrip.com/sight/guilin28/5925.html', method='null', extras=null, priority=0, headers={}, cookies={}} error - [ERROR] [2019-12-12 23:17:31:996] 
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+### The error may exist in file [F:\MyCode\IdeaProjects\zti\target\classes\mapper\SightMapper.xml]
+### The error may involve cn.edu.guet.zti.web.dao.SightDao.addSight-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_sight(sight_name,sight_url_id,address,open_time,score,introduction,place_url_id,rank,phone,website)         values(?,?,?,?,?,?,?,?,?,?);
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+; SQL []; Data truncation: Data too long for column 'open_time' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy20.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy27.addSight(Unknown Source)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.persistentBasicInfo(PersistentSightPipeline.java:87)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.process(PersistentSightPipeline.java:41)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:975)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:392)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 15 more
+景点已存在：22081
+
+景点已存在：107505
+
+景点已存在：18147
+
+景点已存在：22077
+
+景点已存在：14892
+
+景点已存在：140484
+
+景点已存在：2880
+
+景点已存在：137485
+
+景点已存在：52551
+
+景点已存在：22083
+
+景点已存在：22084
+
+景点已存在：107501
+
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100c0a0000004mz4w92CC_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\10090a0000004mz205BA8_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100a080000003980i0D57_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100r0a0000004mz9u9567_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100d0a0000004myzu64C6_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100c0a0000004mz551D14_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100r0c0000006o8767F23_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\100k0c0000006o7j7B44E_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\ca1735c7690d44f698046f5dd4486447_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\1009080000003983kB41E_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\21a4f7e0961240c788c67f6f168dc9eb_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\e18f58c15dc846489d235b330bfc98a5_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\51367e330a3e40bdbf4bd049fcaccb56_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\cbadf240b490415cbd4977306e8f24c9_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\350s180000014t62k23E9_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\beihai140\sight\9311\350n180000014lcn0F20D_C_364_206.jpg
+process request Request{url='https://you.ctrip.com/sight/weizhouisland120063/9311.html', method='null', extras=null, priority=0, headers={}, cookies={}} error - [ERROR] [2019-12-12 23:19:07:237] 
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+### The error may exist in file [F:\MyCode\IdeaProjects\zti\target\classes\mapper\SightMapper.xml]
+### The error may involve cn.edu.guet.zti.web.dao.SightDao.addSight-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_sight(sight_name,sight_url_id,address,open_time,score,introduction,place_url_id,rank,phone,website)         values(?,?,?,?,?,?,?,?,?,?);
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+; SQL []; Data truncation: Data too long for column 'open_time' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy20.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy27.addSight(Unknown Source)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.persistentBasicInfo(PersistentSightPipeline.java:87)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.process(PersistentSightPipeline.java:41)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:975)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:392)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 15 more
+景点已存在：9308
+
+景点已存在：62160
+
+景点已存在：109881
+
+景点已存在：109882
+
+景点已存在：9312
+
+景点已存在：109883
+
+景点已存在：51834
+
+景点已存在：109884
+
+景点已存在：131777
+
+景点已存在：9369
+
+景点已存在：52786
+
+景点已存在：1418220
+
+景点已存在：109885
+
+景点已存在：1412796
+
+景点已存在：8810
+
+景点已存在：8804
+
+景点已存在：8812
+
+景点已存在：8841
+
+景点已存在：122743
+
+景点已存在：133976
+
+景点已存在：1413292
+
+景点已存在：8807
+
+景点已存在：8856
+
+景点已存在：8809
+
+download page https://you.ctrip.com/sight/nanning166/133977.html error - [WARN] [2019-12-12 23:22:37:867] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+景点已存在：8846
+
+景点已存在：20304
+
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\nanning166\sight\1418532\CggYsVbT9QmADhJwACYmqYy0_Ec331_C_350_230.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\nanning166\sight\1418532\100f0y000000lypl4CF19_C_350_230.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\nanning166\sight\1418532\100j15000000xe6woA4BD_C_350_230.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\nanning166\sight\1418532\100414000000x14dk9EA0_C_350_230.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\nanning166\sight\1418532\100415000000xz3so569C_C_350_230.jpg
+持久化景点基本信息：Sight{sightId=0, sightName='南宁国际会展中心', sightUrlId='1418532', address='地址：南宁市青秀区民族大道东段106号', rank=' ', phone=' 0771-2092228,0771-2092038,0771-2092098 ', website='http://www.nicec.cn/', openTime=无展会不对外开放，外部可参观；有展会时根据展会情况确定时间，详情可电话咨询。, score=4.6, introduction=' 南宁国际会展中心坐落于民歌湖东侧，是中国—东盟博览会的永久会址，一年一度的东盟博览会在此举办。南宁国际会展中心建筑场馆颇具特色，尤其是象征着南宁市花朱槿花的独特造型格外引人注目，成为南宁的地标之一。南宁国际会展中心由主建筑、会展广场、民歌广场等组成，主建筑包含了14个大小不同的展览大厅，是南宁地区最具规模的展览场馆。这里不仅承办一年一度的东盟博览会，也是各类国内和国际展览会的举办场地，包括其附属的民歌广场也是一年一度南宁国际民歌艺术节的主会场。 ', placeUrlId='nanning166'}
+
+景点已存在：137429
+
+景点已存在：22079
+
+景点已存在：22081
+
+景点已存在：22077
+
+景点已存在：140484
+
+download page https://you.ctrip.com/sight/yangshuo702/137485.html error - [WARN] [2019-12-12 23:24:16:180] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+download page https://you.ctrip.com/sight/yangshuo702/52551.html error - [WARN] [2019-12-12 23:24:31:333] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+download page https://you.ctrip.com/sight/yangshuo702/22083.html error - [WARN] [2019-12-12 23:24:45:469] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+景点已存在：22084
+
+景点已存在：52594
+
+景点已存在：26887
+
+景点已存在：52580
+
+景点已存在：132432
+
+景点已存在：22078
+
+景点已存在：48899
+
+景点已存在：50088
+
+景点已存在：62242
+
+景点已存在：18135
+
+景点已存在：131755
+
+景点已存在：62241
+
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\f9267476b5b14270addaecb87db80b4e_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\c298e29f42d542e99f7befe510afab41_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\a59b40084e59483cb57ef558b73067fb_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\64ed7dfc58e044debc35ffef29f9e736_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\96e11ad43b684b48b09cc790265a2caf_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\64ed7dfc58e044debc35ffef29f9e736_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\1aa9656732724962ada9a4e7309b77ce_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\ea8684d09099445cb7b74ce0d935aba5_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\7571ca4fa258428493de5bb9a75b43c3_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\675c67bc418a4c58a0ee0617b7bb8571_C_422_236.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\350m11000000ri3qz82D9_C_364_206.jpg
+文件已存在F:\MyCode\IdeaProjects\zti\src\main\webapp\WEB-INF\img\liuzhou143\sight\1412452\350611000000r9c9w6A48_C_364_206.jpg
+process request Request{url='https://you.ctrip.com/sight/liuzhou143/1412452.html', method='null', extras=null, priority=0, headers={}, cookies={}} error - [ERROR] [2019-12-12 23:26:28:176] 
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+### The error may exist in file [F:\MyCode\IdeaProjects\zti\target\classes\mapper\SightMapper.xml]
+### The error may involve cn.edu.guet.zti.web.dao.SightDao.addSight-Inline
+### The error occurred while setting parameters
+### SQL: insert into t_sight(sight_name,sight_url_id,address,open_time,score,introduction,place_url_id,rank,phone,website)         values(?,?,?,?,?,?,?,?,?,?);
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+; SQL []; Data truncation: Data too long for column 'open_time' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy20.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy27.addSight(Unknown Source)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.persistentBasicInfo(PersistentSightPipeline.java:87)
+	at cn.edu.guet.zti.web.webmagic.pipeline.persistent.PersistentSightPipeline.process(PersistentSightPipeline.java:41)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:418)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'open_time' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:975)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:392)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 15 more
+景点已存在：16900
+
+景点已存在：1482880
+
+景点已存在：62257
+
+景点已存在：1684136
+
+景点已存在：1488467
+
+景点已存在：1684141
+
+景点已存在：16901
+
+景点已存在：2478867
+
+景点已存在：1412454
+
+景点已存在：1407599
+
+景点已存在：14892
+
+景点已存在：110465
+
+景点已存在：137435
+
+景点已存在：18143
+
+景点已存在：50289
+
+景点已存在：107503
+
+景点已存在：132092
+
+景点已存在：1417346
+
+景点已存在：1417352
+
+景点已存在：131717
+
+景点已存在：1417342
+
+景点已存在：50290
+
+景点已存在：1714092
+
+景点已存在：50288
+
+景点已存在：131739
+
+景点已存在：22158
+
+景点已存在：22156
+
+景点已存在：69544
+
+景点已存在：137452
+
+景点已存在：68580
+
+景点已存在：1786938
+
+景点已存在：22160
+
+景点已存在：1832297
+
+景点已存在：1830246
+
+景点已存在：22162
+
+景点已存在：22159
+
+景点已存在：4999344
+
+景点已存在：1835584
+
+景点已存在：22163
+
+景点已存在：1925598
+
+景点已存在：51441
+
+景点已存在：51464
+
+景点已存在：51456
+
+景点已存在：51452
+
+景点已存在：17720
+
+景点已存在：51446
+
+景点已存在：54563
+
+景点已存在：54582
+
+景点已存在：54577
+
+景点已存在：17717
+
+景点已存在：142564
+
+景点已存在：132821
+
+景点已存在：54552
+
+景点已存在：110159
+
+download page https://you.ctrip.com/sight/baise524/54569.html error - [WARN] [2019-12-12 23:33:41:284] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+景点已存在：8842
+
+景点已存在：54425
+
+景点已存在：18120
+
+景点已存在：8845
+
+景点已存在：110202
+
+景点已存在：1991277
+
+景点已存在：140742
+
+景点已存在：18121
+
+景点已存在：1408929
+
+景点已存在：21922
+
+景点已存在：1408926
+
+景点已存在：4743378
+
+景点已存在：1714054
+
+景点已存在：1408928
+
+景点已存在：21921
+
+景点已存在：57779
+
+景点已存在：57728
+
+景点已存在：57751
+
+景点已存在：57747
+
+景点已存在：57743
+
+景点已存在：57711
+
+景点已存在：57733
+
+景点已存在：57745
+
+景点已存在：57754
+
+景点已存在：57748
+
+景点已存在：57712
+
+景点已存在：57755
+
+景点已存在：57760
+
+景点已存在：57724
+
+景点已存在：131763
+
+景点已存在：2884
+
+景点已存在：140489
+
+景点已存在：18142
+
+景点已存在：131652
+
+景点已存在：1417672
+
+景点已存在：48681
+
+景点已存在：141681
+
+景点已存在：50294
+
+景点已存在：1493501
+
+景点已存在：1407604
+
+景点已存在：1417612
+
+景点已存在：131660
+
+景点已存在：133330
+
+景点已存在：131639
+
+景点已存在：141687
+
+景点已存在：141205
+
+景点已存在：141203
+
+景点已存在：141204
+
+景点已存在：2484954
+
+景点已存在：1753617
+
+景点已存在：4476535
+
+景点已存在：5135833
+
+景点已存在：3302592
+
+景点已存在：4568340
+
+景点已存在：3845355
+
+景点已存在：4571331
+
+景点已存在：4574770
+
+景点已存在：3308388
+
+景点已存在：4553356
+
+景点已存在：4572341
+
+景点已存在：22063
+
+景点已存在：1412505
+
+景点已存在：1407598
+
+景点已存在：1830171
+
+景点已存在：1413439
+
+景点已存在：1729188
+
+景点已存在：1696038
+
+景点已存在：2023866
+
+景点已存在：1729255
+
+景点已存在：2497044
+
+景点已存在：2727777
+
+景点已存在：2496106
+
+景点已存在：2940060
+
+景点已存在：2496302
+
+景点已存在：2488703
+
+景点已存在：131701
+
+景点已存在：145141
+
+景点已存在：1714144
+
+景点已存在：1950192
+
+景点已存在：1714098
+
+景点已存在：5072919
+
+景点已存在：5142903
+
+景点已存在：4618342
+
+景点已存在：4615736
+
+景点已存在：4618341
+
+景点已存在：2605758
+
+景点已存在：142564
+
+景点已存在：1831104
+
+景点已存在：1790091
+
+景点已存在：5643344
+
+景点已存在：4581993
+
+景点已存在：5068493
+
+景点已存在：4578996
+
+景点已存在：4572420
+
+景点已存在：3353762
+
+景点已存在：4510877
+
+景点已存在：2581288
+
+景点已存在：3617891
+
+景点已存在：70254
+
+景点已存在：16935
+
+景点已存在：2521995
+
+景点已存在：2486941
+
+景点已存在：70328
+
+景点已存在：70397
+
+景点已存在：1833237
+
+景点已存在：1835177
+
+景点已存在：1832825
+
+景点已存在：4603549
+
+景点已存在：2604473
+
+景点已存在：5142928
+
+景点已存在：5142929
+
+景点已存在：3708482
+
+景点已存在：4603527
+
+景点已存在：131883
+
+景点已存在：131884
+
+景点已存在：135109
+
+景点已存在：135110
+
+景点已存在：135106
+
+景点已存在：135107
+
+景点已存在：141708
+
+景点已存在：5015378
+
+景点已存在：141706
+
+景点已存在：135117
+
+景点已存在：1829474
+
+景点已存在：141707
+
+景点已存在：135114
+
+景点已存在：147951
+
+景点已存在：135108
+
+景点已存在：131868
+
+景点已存在：131865
+
+景点已存在：4478179
+
+景点已存在：4476479
+
+景点已存在：4476593
+
+景点已存在：3454380
+
+景点已存在：2617881
+
+景点已存在：2617863
+
+景点已存在：4581054
+
+景点已存在：4509295
+
+景点已存在：4478277
+
+景点已存在：4510879
+
+景点已存在：4581010
+
+景点已存在：69103693
+
+景点已存在：3198882
+
+景点已存在：22232
+
+景点已存在：22228
+
+景点已存在：22231
+
+景点已存在：110204
+
+景点已存在：22230
+
+景点已存在：22229
+
+景点已存在：1412038
+
+景点已存在：4800169
+
+景点已存在：3705103
+
+景点已存在：4478303
+
+景点已存在：5142898
+
+景点已存在：3887700
+
+景点已存在：5142894
+
+景点已存在：5142895
+
+景点已存在：5142897
+
+景点已存在：51441
+
+景点已存在：51464
+
+景点已存在：51456
+
+景点已存在：110159
+
+景点已存在：1729239
+
+景点已存在：1708676
+
+景点已存在：70462
+
+景点已存在：4688345
+
+景点已存在：4689347
+
+景点已存在：4993341
+
+景点已存在：4683345
+
+景点已存在：1829582
+
+景点已存在：5542510
+
+景点已存在：3794211
+
+景点已存在：3300416
+
+景点已存在：18135
+
+景点已存在：131755
+
+景点已存在：16900
+
+景点已存在：62257
+
+景点已存在：1684136
+
+景点已存在：1684141
+
+景点已存在：1407603
+
+景点已存在：2017331
+
+景点已存在：70479
+
+景点已存在：5100449
+
+景点已存在：1835204
+
+景点已存在：1684073
+
+景点已存在：1830611
+
+景点已存在：4603609
+
+景点已存在：5068644
+
+景点已存在：21925
+
+景点已存在：1701274
+
+景点已存在：1701292
+
+景点已存在：1459916
+
+景点已存在：2500559
+
+景点已存在：1994045
+
+景点已存在：4478214
+
+景点已存在：4648484
+
+景点已存在：5382361
+
+景点已存在：2499768
+
+景点已存在：4478215
+
+景点已存在：5142913
+
+景点已存在：3995890
+
+景点已存在：4478213
+
+景点已存在：2646381
+
+景点已存在：57728
+
+景点已存在：57724
+
+景点已存在：57730
+
+景点已存在：57778
+
+景点已存在：57720
+
+景点已存在：57722
+
+景点已存在：57721
+
+景点已存在：57723
+
+景点已存在：1830766
+
+景点已存在：57725
+
+景点已存在：57726
+
+景点已存在：1830174
+
+景点已存在：2016391
+
+景点已存在：4361343
+
+景点已存在：3183909
+
+景点已存在：5928
+
+景点已存在：1412528
+
+景点已存在：26740
+
+景点已存在：1478560
+
+景点已存在：137416
+
+景点已存在：1478723
+
+景点已存在：1483046
+
+景点已存在：137403
+
+景点已存在：1417858
+
+景点已存在：131601
+
+景点已存在：1789685
+
+景点已存在：1417836
+
+景点已存在：1418166
+
+景点已存在：1417614
+
+景点已存在：1417626
+
+景点已存在：135495
+
+景点已存在：135492
+
+景点已存在：131868
+
+景点已存在：131865
+
+景点已存在：70422
+
+download page https://you.ctrip.com/sight/luchuan971/135493.html error - [WARN] [2019-12-13 00:02:53:542] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+景点已存在：70430
+
+景点已存在：1970089
+
+景点已存在：131864
+
+景点已存在：131869
+
+景点已存在：131871
+
+景点已存在：4478179
+
+景点已存在：1732437
+
+景点已存在：131870
+
+景点已存在：137456
+
+景点已存在：1481695
+
+景点已存在：131603
+
+景点已存在：1417821
+
+景点已存在：1417728
+
+景点已存在：5675350
+
+景点已存在：4322341
+
+景点已存在：1417823
+
+景点已存在：1833965
+
+景点已存在：5654368
+
+景点已存在：5101402
+
+景点已存在：3329485
+
+景点已存在：4618555
+
+景点已存在：3687334
+
+景点已存在：3597753
+
+持久化景点基本信息：Sight{sightId=0, sightName='燕窝楼 ', sightUrlId='4478265', address='地址：广西壮族自治区全州县永岁乡石头岗村 541507', rank=' ', phone=' ', website=' ', openTime=周日-周六:上午8:00-下午6:00;, score= , introduction=' ', placeUrlId='quanzhou3040'}
+
+景点已存在：57711
+
+景点已存在：57758
+
+景点已存在：57753
+
+景点已存在：57739
+
+景点已存在：70279
+
+景点已存在：57740
+
+景点已存在：2527341
+
+景点已存在：2842655
+
+景点已存在：4553559
+
+景点已存在：4553560
+
+景点已存在：3498373
+
+景点已存在：4578812
+
+景点已存在：4572433
+
+景点已存在：17720
+
+景点已存在：54563
+
+景点已存在：1673863
+
+景点已存在：54530
+
+景点已存在：1739276
+
+景点已存在：2003797
+
+景点已存在：1830911
+
+景点已存在：4505509
+
+景点已存在：1832031
+
+景点已存在：4572746
+
+景点已存在：3211346
+
+景点已存在：1831978
+
+景点已存在：4553786
+
+景点已存在：4478222
+
+景点已存在：4478233
+
+景点已存在：22063
+
+景点已存在：1412479
+
+景点已存在：1412505
+
+景点已存在：22064
+
+景点已存在：1407598
+
+景点已存在：22062
+
+景点已存在：141464
+
+景点已存在：1830171
+
+景点已存在：1714045
+
+景点已存在：1831919
+
+景点已存在：1714106
+
+景点已存在：1837175
+
+景点已存在：141466
+
+景点已存在：2587166
+
+景点已存在：1413439
+
+景点已存在：141757
+
+景点已存在：50678
+
+景点已存在：1407601
+
+景点已存在：16917
+
+景点已存在：1408932
+
+景点已存在：4833920
+
+景点已存在：1989687
+
+景点已存在：1729313
+
+景点已存在：1838870
+
+景点已存在：2502481
+
+景点已存在：1833425
+
+景点已存在：1834875
+
+景点已存在：3181479
+
+景点已存在：4239758
+
+景点已存在：4572577
+
+景点已存在：131888
+
+景点已存在：1408913
+
+景点已存在：131892
+
+景点已存在：1408914
+
+景点已存在：131891
+
+景点已存在：1830591
+
+景点已存在：4476509
+
+景点已存在：5142883
+
+景点已存在：2576409
+
+景点已存在：3147270
+
+景点已存在：3147334
+
+景点已存在：3175270
+
+景点已存在：3147332
+
+景点已存在：131883
+
+景点已存在：131884
+
+景点已存在：1409352
+
+景点已存在：131894
+
+景点已存在：135109
+
+景点已存在：137971
+
+景点已存在：1739071
+
+景点已存在：135110
+
+景点已存在：131888
+
+景点已存在：135106
+
+景点已存在：135107
+
+景点已存在：1470072
+
+景点已存在：1413440
+
+景点已存在：141708
+
+景点已存在：1408913
+
+景点已存在：48674
+
+景点已存在：131693
+
+景点已存在：50292
+
+景点已存在：70473
+
+景点已存在：137487
+
+景点已存在：131698
+
+景点已存在：18146
+
+景点已存在：1830548
+
+景点已存在：131508
+
+景点已存在：1713988
+
+景点已存在：5142940
+
+景点已存在：1417671
+
+景点已存在：4478200
+
+景点已存在：3257188
+
+景点已存在：3395895
+
+景点已存在：1708522
+
+景点已存在：5078351
+
+景点已存在：5649406
+
+景点已存在：4571462
+
+景点已存在：2582294
+
+景点已存在：3175027
+
+景点已存在：3188494
+
+景点已存在：3443305
+
+景点已存在：2938022
+
+景点已存在：2290182
+
+景点已存在：3242307
+
+景点已存在：4553495
+
+景点已存在：4553534
+
+景点已存在：4572448
+
+景点已存在：2582302
+
+景点已存在：57779
+
+景点已存在：57738
+
+景点已存在：57735
+
+景点已存在：57737
+
+景点已存在：57736
+
+景点已存在：135100
+
+景点已存在：4038516
+
+景点已存在：5142875
+
+景点已存在：3017324
+
+景点已存在：4553416
+
+景点已存在：2648270
+
+景点已存在：3189452
+
+景点已存在：4572384
+
+景点已存在：3484951
+
+景点已存在：4553419
+
+景点已存在：18120
+
+景点已存在：2509621
+
+景点已存在：2487796
+
+景点已存在：2573533
+
+景点已存在：2502701
+
+景点已存在：2573535
+
+景点已存在：4568310
+
+景点已存在：4582306
+
+景点已存在：4505539
+
+景点已存在：4571313
+
+景点已存在：5072343
+
+景点已存在：4510591
+
+景点已存在：5142926
+
+景点已存在：4568309
+
+景点已存在：2573531
+
+景点已存在：22158
+
+景点已存在：1830246
+
+景点已存在：1832297
+
+景点已存在：4999344
+
+景点已存在：1925598
+
+景点已存在：1833519
+
+景点已存在：134068
+
+景点已存在：2493521
+
+景点已存在：1834570
+
+景点已存在：1830690
+
+景点已存在：1835067
+
+景点已存在：4245702
+
+景点已存在：1833674
+
+景点已存在：134067
+
+景点已存在：3407754
+
+景点已存在：57733
+
+景点已存在：2506382
+
+景点已存在：57732
+
+景点已存在：57781
+
+景点已存在：57731
+
+景点已存在：57785
+
+景点已存在：57783
+
+景点已存在：57774
+
+景点已存在：3729974
+
+景点已存在：57784
+
+景点已存在：3400323
+
+景点已存在：4553706
+
+景点已存在：4553707
+
+景点已存在：4553683
+
+景点已存在：4553705
+
+景点已存在：8846
+
+景点已存在：1418601
+
+景点已存在：1460451
+
+景点已存在：3366918
+
+景点已存在：141465
+
+景点已存在：4329362
+
+景点已存在：4831899
+
+景点已存在：4648919
+
+景点已存在：4648834
+
+景点已存在：2684050
+
+景点已存在：2646318
+
+景点已存在：4648853
+
+景点已存在：2693818
+
+景点已存在：4649173
+
+景点已存在：3326052
+
+景点已存在：22119
+
+景点已存在：131856
+
+景点已存在：22121
+
+景点已存在：1408931
+
+景点已存在：22124
+
+景点已存在：22123
+
+景点已存在：22125
+
+景点已存在：2024768
+
+景点已存在：22126
+
+景点已存在：4693342
+
+景点已存在：141205
+
+景点已存在：141203
+
+景点已存在：50632
+
+景点已存在：1714123
+
+景点已存在：141204
+
+景点已存在：21923
+
+景点已存在：21924
+
+景点已存在：1418618
+
+景点已存在：1418706
+
+景点已存在：1408802
+
+景点已存在：1418659
+
+景点已存在：1418726
+
+景点已存在：1418654
+
+景点已存在：1418652
+
+景点已存在：1418708
+
+景点已存在：1418577
+
+景点已存在：1418722
+
+景点已存在：1418656
+
+景点已存在：1418692
+
+景点已存在：4278359
+
+景点已存在：9314
+
+景点已存在：9310
+
+景点已存在：9373
+
+景点已存在：9316
+
+景点已存在：2489365
+
+景点已存在：9313
+
+景点已存在：131793
+
+景点已存在：2018360
+
+景点已存在：3786335
+
+景点已存在：5135873
+
+景点已存在：4001609
+
+景点已存在：3694105
+
+景点已存在：3361863
+
+景点已存在：5072425
+
+持久化景点基本信息：Sight{sightId=0, sightName='德星堂', sightUrlId='3256784', address='地址：241县道与廉州大道交叉口', rank=' ', phone=' ', website=' ', openTime= , score= , introduction=' ', placeUrlId='hepu965'}
+
+景点已存在：1837549
+
+景点已存在：70418
+
+景点已存在：1714138
+
+景点已存在：1984903
+
+景点已存在：2502862
+
+景点已存在：4478248
+
+景点已存在：4478271
+
+景点已存在：3360703
+
+景点已存在：4553837
+
+景点已存在：4483389
+
+景点已存在：2576404
+
+景点已存在：3258822
+
+景点已存在：3827600
+
+景点已存在：4570098
+
+景点已存在：4476453
+
+景点已存在：8842
+
+景点已存在：54425
+
+景点已存在：110202
+
+景点已存在：140742
+
+景点已存在：4743378
+
+景点已存在：1714054
+
+景点已存在：1714093
+
+景点已存在：1933086
+
+景点已存在：5649369
+
+景点已存在：1714107
+
+景点已存在：1681413
+
+景点已存在：4476725
+
+景点已存在：3226469
+
+景点已存在：4580093
+
+景点已存在：5650363
+
+景点已存在：135495
+
+景点已存在：70430
+
+景点已存在：131864
+
+景点已存在：137456
+
+景点已存在：135494
+
+景点已存在：2494140
+
+景点已存在：1407606
+
+景点已存在：1673856
+
+景点已存在：1989230
+
+景点已存在：135498
+
+景点已存在：1989246
+
+景点已存在：2487571
+
+景点已存在：2497809
+
+景点已存在：2495427
+
+景点已存在：4741389
+
+景点已存在：18148
+
+景点已存在：50486
+
+景点已存在：3389512
+
+景点已存在：131653
+
+景点已存在：131663
+
+景点已存在：131664
+
+景点已存在：2521595
+
+景点已存在：1714109
+
+景点已存在：131550
+
+景点已存在：3462340
+
+景点已存在：3254220
+
+景点已存在：3157356
+
+景点已存在：4617305
+
+景点已存在：4618285
+
+景点已存在：4627146
+
+景点已存在：22232
+
+景点已存在：22228
+
+景点已存在：22231
+
+景点已存在：110204
+
+景点已存在：22226
+
+景点已存在：22230
+
+景点已存在：22229
+
+景点已存在：70065
+
+景点已存在：22227
+
+景点已存在：22233
+
+景点已存在：1785916
+
+景点已存在：1412038
+
+景点已存在：1708522
+
+景点已存在：1709991
+
+景点已存在：2017012
+
+景点已存在：133954
+
+景点已存在：1408795
+
+景点已存在：54429
+
+景点已存在：142297
+
+景点已存在：1459008
+
+景点已存在：1418752
+
+景点已存在：1462382
+
+景点已存在：4225534
+
+景点已存在：2477568
+
+景点已存在：4648927
+
+景点已存在：5142900
+
+景点已存在：2835305
+
+景点已存在：3588152
+
+景点已存在：3828087
+
+景点已存在：4648882
+
+景点已存在：141757
+
+景点已存在：50678
+
+景点已存在：1407610
+
+景点已存在：1407601
+
+景点已存在：18137
+
+景点已存在：16917
+
+景点已存在：2501645
+
+景点已存在：1408932
+
+景点已存在：1714084
+
+景点已存在：1484957
+
+景点已存在：4833920
+
+景点已存在：1989687
+
+景点已存在：1840746
+
+景点已存在：1729313
+
+景点已存在：5257351
+
+景点已存在：1407610
+
+景点已存在：18137
+
+景点已存在：2492152
+
+景点已存在：4478275
+
+景点已存在：2720194
+
+景点已存在：4579012
+
+景点已存在：2578012
+
+景点已存在：3675129
+
+景点已存在：2852696
+
+景点已存在：3313104
+
+景点已存在：4553634
+
+景点已存在：4581983
+
+景点已存在：4553666
+
+景点已存在：4578762
+
+景点已存在：4553668
+
+景点已存在：1673647
+
+景点已存在：70416
+
+景点已存在：70140
+
+景点已存在：2485189
+
+景点已存在：1714143
+
+景点已存在：1412056
+
+景点已存在：2511742
+
+景点已存在：4033728
+
+景点已存在：4603384
+
+景点已存在：4603981
+
+景点已存在：4053207
+
+景点已存在：3660488
+
+景点已存在：2604538
+
+景点已存在：4603251
+
+景点已存在：1407599
+
+景点已存在：4333379
+
+景点已存在：2495905
+
+景点已存在：2023653
+
+景点已存在：1714055
+
+景点已存在：5142919
+
+景点已存在：3589260
+
+景点已存在：4603468
+
+景点已存在：4280345
+
+景点已存在：5039377
+
+景点已存在：5039378
+
+景点已存在：5040373
+
+景点已存在：5037386
+
+景点已存在：5039376
+
+景点已存在：5040372
+
+景点已存在：1786938
+
+景点已存在：1830445
+
+景点已存在：4582089
+
+景点已存在：1838401
+
+景点已存在：2484525
+
+景点已存在：2485650
+
+景点已存在：1835672
+
+景点已存在：5596369
+
+景点已存在：4002204
+
+景点已存在：2578166
+
+景点已存在：4553790
+
+景点已存在：4579051
+
+景点已存在：4553791
+
+景点已存在：4553792
+
+景点已存在：1833266
+
+景点已存在：70345
+
+景点已存在：1840136
+
+景点已存在：2502776
+
+景点已存在：3319312
+
+景点已存在：4578358
+
+景点已存在：4553665
+
+景点已存在：4571461
+
+景点已存在：4553649
+
+景点已存在：4553651
+
+景点已存在：4572541
+
+景点已存在：4553650
+
+景点已存在：2576418
+
+景点已存在：4553652
+
+景点已存在：1417471
+
+景点已存在：1830751
+
+景点已存在：1830742
+
+景点已存在：4618371
+
+景点已存在：4618369
+
+景点已存在：4618370
+
+景点已存在：3869640
+
+景点已存在：135493
+
+景点已存在：131870
+
+景点已存在：4476452
+
+景点已存在：4021604
+
+景点已存在：4580543
+
+景点已存在：4584127
+
+景点已存在：3309347
+
+景点已存在：3302744
+
+景点已存在：4580995
+
+景点已存在：2620036
+
+景点已存在：4580996
+
+景点已存在：4580998
+
+景点已存在：3242341
+
+景点已存在：3846220
+
+景点已存在：2620028
+
+景点已存在：132821
+
+景点已存在：141467
+
+景点已存在：1732061
+
+景点已存在：3391917
+
+景点已存在：5123342
+
+景点已存在：3210054
+
+景点已存在：4476724
+
+景点已存在：4478257
+
+景点已存在：4478260
+
+景点已存在：5135838
+
+景点已存在：4478258
+
+景点已存在：4478255
+
+景点已存在：5068510
+
+景点已存在：3468951
+
+景点已存在：4575979
+
+景点已存在：18121
+
+景点已存在：1714129
+
+景点已存在：2023615
+
+景点已存在：2006990
+
+景点已存在：2007007
+
+景点已存在：2575082
+
+景点已存在：2707052
+
+景点已存在：4578767
+
+景点已存在：4579134
+
+景点已存在：4582212
+
+景点已存在：4568329
+
+景点已存在：5062388
+
+景点已存在：4553346
+
+景点已存在：3436452
+
+景点已存在：4582112
+
+景点已存在：1714034
+
+download page https://you.ctrip.com/sight/bobai3049/1714118.html error - [WARN] [2019-12-13 01:04:55:851] 
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at cn.edu.guet.zti.web.webmagic.downloader.CustomHttpClientDownloader.download(CustomHttpClientDownloader.java:61)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+景点已存在：5623358
+
+景点已存在：3184240
+
+景点已存在：4580994
+
+景点已存在：4580988
+
+景点已存在：3888426
+
+景点已存在：2620058
+
+景点已存在：3360439
+
+景点已存在：3599614
+
+景点已存在：4589304
+
+景点已存在：4596559
+
+景点已存在：4580987
+
+景点已存在：3169530
+
+景点已存在：3888550
+
+景点已存在：8845
+
+景点已存在：5056394
+
+景点已存在：2021908
+
+景点已存在：5069562
+
+景点已存在：1983288
+
+景点已存在：2005515
+
+景点已存在：2021913
+
+景点已存在：4571323
+
+景点已存在：4571315
+
+景点已存在：4571304
+
+景点已存在：3472519
+
+景点已存在：2527307
+
+景点已存在：3865148
+
+景点已存在：4338346
+
+景点已存在：110203
+
+景点已存在：2441734
+
+景点已存在：2576590
+
+景点已存在：4553733
+
+景点已存在：4553732
+
+景点已存在：3225358
+
+景点已存在：4572650
+
+景点已存在：4553720
+
+景点已存在：4553719
+
+景点已存在：5168930
+
+景点已存在：54582
+
+景点已存在：54552
+
+景点已存在：1830862
+
+景点已存在：1832642
+
+景点已存在：4574731
+
+景点已存在：3708368
+
+景点已存在：2581285
+
+景点已存在：4553716
+
+景点已存在：2527315
+
+景点已存在：1482880
+
+景点已存在：2604498
+
+景点已存在：3475863
+
+持久化景点基本信息：Sight{sightId=0, sightName='江那鸳鸯潭风景区 ', sightUrlId='5142878', address='地址：广西壮族自治区东兴市东兴镇 538100', rank=' ', phone=' ', website=' ', openTime=周日-周六:上午12:00-上午12:00;, score= , introduction=' ', placeUrlId='rongan3043'}
+
+已写入文件：https://dimg02.c-ctrip.com/images/100r15000000yea736067_C_350_230.jpg
+已写入文件：https://dimg08.c-ctrip.com/images/100515000000yid868DD0_C_350_230.jpg
+已写入文件：https://dimg01.c-ctrip.com/images/100t15000000yfwqw9493_C_350_230.jpg
+已写入文件：https://dimg05.c-ctrip.com/images/100b15000000yi8zc3BCC_C_350_230.jpg
+持久化景点基本信息：Sight{sightId=0, sightName='白莲洞遗址 ', sightUrlId='4478236', address='地址：广西壮族自治区柳江县白面山南麓 545100', rank=' ', phone=' ', website=' ', openTime=周日-周六:上午8:00-下午6:00;, score= , introduction=' ', placeUrlId='rongan3043'}
+
+景点已存在：5066897
+
+景点已存在：4603535
+
+景点已存在：4603525
+
+景点已存在：65191402
+
+景点已存在：4604008
+
+景点已存在：4603534
+
+景点已存在：67833227
+
+景点已存在：1413440
+
+景点已存在：2494583
+
+景点已存在：1832274
+
+景点已存在：2494282
+
+景点已存在：1836775
+
+景点已存在：4946349
+
+景点已存在：4553776
+
+景点已存在：4553777
+
+景点已存在：4748362
+
+景点已存在：4579140
+
+景点已存在：3204853
+
+景点已存在：4553779
+
+景点已存在：2576594
+
+景点已存在：2350408
+
+景点已存在：4572763
+
+景点已存在：2509701
+
+景点已存在：1830765
+
+景点已存在：4619122
+
+景点已存在：3248541
+
+景点已存在：5142909
+
+景点已存在：69100540
+
+景点已存在：3145978
+
+景点已存在：4618377
+
+景点已存在：3356128
+
+景点已存在：3615861
+
+景点已存在：3848095
+
+景点已存在：3145986
+
+景点已存在：4627446
+
+景点已存在：3435834
+
+景点已存在：3695056
+
+景点已存在：1835584
+
+景点已存在：3497565
+
+景点已存在：2485040
+
+景点已存在：5668348
+
+景点已存在：4478299
+
+景点已存在：3436418
+
+景点已存在：4478211
+
+景点已存在：4476730
+
+景点已存在：4478298
+
+景点已存在：4800172
+
+景点已存在：4475203
+
+景点已存在：3605377
+
+景点已存在：4553734
+
+景点已存在：4553756
+
+景点已存在：4476934
+
+景点已存在：1991277
+
+景点已存在：5254361
+
+景点已存在：3302479
+
+景点已存在：69098307
+
+景点已存在：5039349
+
+景点已存在：5037351
+
+景点已存在：5039350
+
+景点已存在：5037352
+
+景点已存在：5040346
+
+景点已存在：5037353
+
+景点已存在：5038349
+
+景点已存在：5039348
+
+景点已存在：5039347
+
+景点已存在：3333173
+
+景点已存在：4572356
+
+景点已存在：1832972
+
+景点已存在：1830092
+
+景点已存在：3785561
+
+景点已存在：4553580
+
+景点已存在：4553680
+
+景点已存在：2692197
+
+景点已存在：3361710
+
+景点已存在：3498707
+
+景点已存在：1714064
+
+景点已存在：1834003
+
+景点已存在：3258133
+
+景点已存在：4578700
+
+景点已存在：4553801
+
+景点已存在：4572845
+
+景点已存在：4553794
+
+景点已存在：1840746
+
+景点已存在：3488995
+
+景点已存在：4553632
+
+景点已存在：5066823
+
+景点已存在：4579151
+
+景点已存在：4580135
+
+景点已存在：2501645
+
+景点已存在：1714141
+
+景点已存在：4553682
+
+景点已存在：3312411
+
+景点已存在：4572616
+
+景点已存在：2578041
+
+景点已存在：2578031
+
+景点已存在：4572576
+
+景点已存在：2024768
+
+景点已存在：1714123
+
+景点已存在：5057352
+
+景点已存在：5058359
+
+景点已存在：4571539
+
+景点已存在：4571338
+
+景点已存在：2620589
+
+景点已存在：3661419
+
+景点已存在：3497275
+
+景点已存在：4478262
+
+景点已存在：4568326
+
+景点已存在：4571307
+
+景点已存在：3297142
+
+景点已存在：4553344
+
+景点已存在：4580319
+
+景点已存在：1786977
+
+景点已存在：2485053
+
+景点已存在：2495299
+
+景点已存在：4553787
+
+景点已存在：4553789
+
+景点已存在：4579144
+
+景点已存在：2576600
+
+景点已存在：3327110
+
+景点已存在：4579103
+
+景点已存在：4553862
+
+景点已存在：4578792
+
+景点已存在：4553788
+
+景点已存在：3343170
+
+景点已存在：2576595
+
+景点已存在：3458364
+
+景点已存在：1789928
+
+景点已存在：4620865
+
+景点已存在：4648975
+
+景点已存在：4648974
+
+景点已存在：4646293
+
+景点已存在：2996473
+
+景点已存在：2646485
+
+景点已存在：4476484
+
+景点已存在：4649229
+
+景点已存在：5165090
+
+景点已存在：4620857
+
+景点已存在：4620866
+
+景点已存在：4478249
+
+景点已存在：4639320
+
+景点已存在：3296254
+
+景点已存在：3182022
+
+景点已存在：4553488
+
+景点已存在：5068622
+
+景点已存在：4583075
+
+景点已存在：4220206
+
+景点已存在：2581274
+
+景点已存在：4578990
+
+景点已存在：4286342
+
+景点已存在：4553744
+
+景点已存在：2581230
+
+景点已存在：2581232
+
+景点已存在：4553761
+
+景点已存在：2576184
+
+景点已存在：2576186
+
+景点已存在：4572401
+
+景点已存在：4569419
+
+景点已存在：2576180
+
+景点已存在：4572400
+
+景点已存在：4572402
+
+景点已存在：3769731
+
+景点已存在：135492
+
+景点已存在：131869
+
+景点已存在：3693998
+
+景点已存在：4581028
+
+景点已存在：4581053
+
+景点已存在：4581027
+
+景点已存在：4581012
+
+景点已存在：2619993
+
+景点已存在：5072377
+
+景点已存在：3137051
+
+景点已存在：22062
+
+景点已存在：1837175
+
+景点已存在：2587166
+
+景点已存在：2850258
+
+景点已存在：4571327
+
+景点已存在：3363073
+
+景点已存在：4578793
+
+景点已存在：4569375
+
+景点已存在：3661601
+
+景点已存在：4481188
+
+景点已存在：4571329
+
+景点已存在：2587176
+
+景点已存在：3358019
+
+景点已存在：4571325
+
+景点已存在：4571328
+
+景点已存在：4618462
+
+景点已存在：5676353
+
+景点已存在：3253824
+
+景点已存在：4618463
+
+景点已存在：3258617
+
+景点已存在：3489001
+
+景点已存在：5169265
+
+景点已存在：5169264
+
+景点已存在：4569459
+
+景点已存在：4553557
+
+景点已存在：4579060
+
+景点已存在：3210047
+
+景点已存在：3450302
+
+景点已存在：4572460
+
+景点已存在：4578874
+
+景点已存在：2578017
+
+
+
+
+Process finished with exit code 0
