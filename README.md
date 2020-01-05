@@ -18,7 +18,9 @@
 
 <img src="C:\Users\gnosed\AppData\Roaming\Typora\typora-user-images\1578229927751.png" width="300px">
 
------
+
+
+----------
 
 
 
@@ -54,11 +56,11 @@
 
 ### 购物模块
 
-​		购物模块的功能流程和美食模块一样。特色商品列表，
+​		购物模块的功能流程和美食模块一样，首先展示特色商品列表。
 
 <img src="D:\Download\localhost_8080_crawl_getGoods.png" width="800px">
 
-​		进入商品详情页，还有可以点击我的主页，可回到首页，即广西省城市列表。
+​		可进入商品详情页，还有可以点击我的主页，可回到首页，即广西省城市列表。
 
 <img src="D:\Download\localhost_8080_crawl_getGood_goodurlid=368591.png" width="800px">
 
