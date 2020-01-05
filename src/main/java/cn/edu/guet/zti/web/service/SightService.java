@@ -13,9 +13,9 @@ public interface SightService {
 
     public Sight getSightByUrlId(String webAppPath, String sightUrlId);
 
-    public ArrayList<Sight> getSightsByPage(String webAppPath, String placeUrlId, int pageNum);
+    public ArrayList<Sight> getSightsByPage(String webAppPath, String placeUrlId, String placeName, int pageNum);
 
-    public int getTotalPage(String placeUrlId);
+    public int getTotalPage(String placeUrlId, String placeName);
 
     public List<Comment> getCommentByPageNum(int pageNum, String sightUrlId);
 }

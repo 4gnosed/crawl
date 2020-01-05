@@ -41,6 +41,15 @@ public class GoodServiceImpl implements GoodService {
         return addPicNameAndShopList(webAppPath, good);
     }
 
+    @Override
+    public ArrayList<Good> findAll(String webAppPath) throws Exception {
+        ArrayList<Good> goods = goodDao.selectAll();
+        for (Good g : goods) {
+            g = addPicNameAndShopList(webAppPath, g);
+        }
+        return goods;
+    }
+
     /**
      * 通过商品urlid获取商场列表
      *

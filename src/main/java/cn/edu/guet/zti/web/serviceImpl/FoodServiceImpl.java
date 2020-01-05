@@ -41,6 +41,15 @@ public class FoodServiceImpl implements FoodService {
         return addPicNameAndRestaurantList(webAppPath, food);
     }
 
+    @Override
+    public List<Food> findAll(String webAppPath) throws Exception {
+        List<Food> foods = foodDao.selectAll();
+        for (Food food : foods) {
+            food = addPicNameAndRestaurantList(webAppPath, food);
+        }
+        return foods;
+    }
+
     /**
      * 通过美食urlid获取餐馆列表
      *

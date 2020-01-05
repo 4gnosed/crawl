@@ -25,7 +25,7 @@ public class PlaceController {
      * @param request
      * @return
      */
-    @RequestMapping(value = {"/place_list", "/getPlaces"})
+    @RequestMapping(value = {"/place_list", "/getPlaces","/", "/index", "/index.html", "/index.jsp", "/index.jsp"})
     public String placesIndex(Model model, HttpServletRequest request) {
         String currentPageStr = request.getParameter("page");
         //当前页
@@ -35,6 +35,7 @@ public class PlaceController {
         } else {
             currentPage = Integer.parseInt(currentPageStr);
         }
+
         //当前页地方
         List<Place> places = placeService.getPlacesByPage(request.getSession().getServletContext().getRealPath("/"), currentPage);
         //总地方数
@@ -48,7 +49,9 @@ public class PlaceController {
         model.addAttribute("beginPage", beginPage);
         model.addAttribute("totalPage", totalPage);
         model.addAttribute("currentPage", currentPage);
-        return "/jsp/place_list";
+        model.addAttribute("menuId", 2);
+        model.addAttribute("placeName", "广西");
+        return "jsp/place_list";
     }
 
 }

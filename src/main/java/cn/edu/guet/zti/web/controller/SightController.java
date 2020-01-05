@@ -38,7 +38,7 @@ public class SightController {
     public String getsights(Model model, HttpServletRequest request) {
         String currentPageStr = request.getParameter("page");
         String placeUrlId = request.getParameter("placeurlid");
-        String placeName = placeService.getplaceNameByUrlId(placeUrlId);
+        String placeName = placeService.getPlaceNameByUrlId(placeUrlId);
         //当前页
         int currentPage = 1;
         if (currentPageStr == null || currentPageStr == "") {
@@ -48,20 +48,22 @@ public class SightController {
         }
         //当前页景点
         ArrayList<Sight> sights = sightService.getSightsByPage(request.getSession().getServletContext().getRealPath("/"),
-                placeUrlId, currentPage);
+                placeUrlId,placeName, currentPage);
         //总景点数
-        int totalSights = sightService.getTotalPage(placeUrlId);
+        int totalSights = sightService.getTotalPage(placeUrlId,placeName);
         //总页（最后一页数）
         int totalPage = PagingUtils.getTotalPage(Constant.SIGHT_KEYWORD, totalSights);
         //首页
         int beginPage = beginPage = PagingUtils.getBeginPage(currentPage, totalPage);
         model.addAttribute("sights", sights);
+        model.addAttribute("cityId", placeUrlId);
         model.addAttribute("totalSights", totalSights);
         model.addAttribute("beginPage", beginPage);
         model.addAttribute("totalPage", totalPage);
         model.addAttribute("currentPage", currentPage);
         model.addAttribute("placeName", placeName);
-        return "/jsp/sight_list";
+        model.addAttribute("menuId", 3);
+        return "jsp/sight_list";
     }
 
     @RequestMapping("/getSight")
@@ -69,7 +71,7 @@ public class SightController {
         String sightUrlId = request.getParameter("sighturlid");
         Sight sight = sightService.getSightByUrlId(request.getSession().getServletContext().getRealPath("/"), sightUrlId);
         model.addAttribute("sight", sight);
-        return "/jsp/sight";
+        return "jsp/sight";
     }
 
     @RequestMapping("/getComment")

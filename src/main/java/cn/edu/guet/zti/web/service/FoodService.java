@@ -9,4 +9,6 @@ public interface FoodService {
     List<Food> getFoodsByPlaceUrlId(String webAppPath, String placeUrlId);
 
     public Food getFoodsByFoodUrlId(String webAppPath, String foodUrlId);
+
+    List<Food> findAll(String webAppPath) throws Exception;
 }

@@ -15,5 +15,5 @@ public interface PlaceService {
 
     public int getTotalPage();
 
-    String getplaceNameByUrlId(String placeUrlId);
+    String getPlaceNameByUrlId(String placeUrlId);
 }

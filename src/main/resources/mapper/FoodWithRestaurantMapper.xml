@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.edu.guet.zti.web.dao.FoodWithRestaurantDao">
 
-    <resultMap id="fwrResultMap" type="FoodWithRestaurant">
+    <resultMap id="fwrResultMap" type="cn.edu.guet.zti.web.pojo.FoodWithRestaurant">
         <id property="fwrId" column="fwr_id"></id>
         <result property="foodUrlId" column="food_url_id"></result>
         <result property="restaurantUrlId" column="restaurant_url_id"></result>

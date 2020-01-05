@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -45,19 +46,23 @@ public class SightServiceImpl implements SightService {
     }
 
     @Override
-    public ArrayList<Sight> getSightsByPage(String webAppPath, String placeUrlId, int pageNum) {
-        ArrayList<Sight> sights = sightDao.getSightsByPage(placeUrlId, (pageNum - 1) * Constant.SIGHT_PAGE_SIZE, Constant.SIGHT_PAGE_SIZE);
+    public ArrayList<Sight> getSightsByPage(String webAppPath, String placeUrlId, String placeName, int pageNum) {
+        ArrayList<Sight> sights = sightDao.getSightsByPage(placeUrlId, placeName,(pageNum - 1) * Constant.SIGHT_PAGE_SIZE, Constant.SIGHT_PAGE_SIZE);
+        System.out.println(placeName+placeUrlId+"景点："+sights.size());
         for (Sight sight : sights) {
             ArrayList<String> pictureNames = FileNameUtils.getPictureNames(webAppPath, sight.getPlaceUrlId(), sight.getSightUrlId());
             sight.setPicNames(pictureNames);
             sight.setCommentCount(commentDao.getCountBySightUrlId(sight.getSightUrlId()));
+            System.out.println(sight);
         }
+        //根据评论数进行从大到小排
+        sights.sort(Comparator.comparing(Sight::getCommentCount).reversed());
         return sights;
     }
 
     @Override
-    public int getTotalPage(String placeUrlId) {
-        return sightDao.getTotalPage(placeUrlId);
+    public int getTotalPage(String placeUrlId, String placeName) {
+        return sightDao.getTotalPage(placeUrlId,placeName);
     }
 
     @Override

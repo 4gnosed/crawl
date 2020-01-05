@@ -13,8 +13,8 @@ public interface SightDao {
 
     public List<String> getAllPlaceUrlId();
 
-    public ArrayList<Sight> getSightsByPage(@Param("placeUrlId") String placeUrlId,
+    public ArrayList<Sight> getSightsByPage(@Param("placeUrlId") String placeUrlId,@Param("placeName")String placeName,
                                             @Param("start") int start, @Param("pageSize") int pageSize);
 
-    public int getTotalPage(String placeUrlId);
+    public int getTotalPage(@Param("placeUrlId") String placeUrlId,@Param("placeName")String placeName);
 }

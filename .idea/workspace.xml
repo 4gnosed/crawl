@@ -7,11 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26fc123c-7589-4ca6-994a-2a30e50da301" name="Default Changelist" comment="完整代码">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/food.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/food_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/good.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/good_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/place_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sight.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sight_list.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/beiliu3045/sight/131865/39dd0a67157a4095824011cd1b4fa0b5_C_422_236.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/beiliu3045/sight/131865/47daac2b27254944b85f16afab2ce082_C_422_236.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/beiliu3045/sight/131865/751a5833ee784f8ca35baa06f782705e_C_422_236.jpg" afterDir="false" />
@@ -2138,11 +2140,113 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ziyuan980/sight/5142940/100f1800000158yplB2B6_C_350_230.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ziyuan980/sight/5142940/100l18000001593xx50A3_C_350_230.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/img/ziyuan980/sight/70473/100l0a0000004jataC15C_C_500_280_Q60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/GoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/GoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/PlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/PlaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/SightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller/SightController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/FoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/FoodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/GoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/GoodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/PlaceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/PlaceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/SightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/dao/SightDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/GoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/GoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/PlaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/PlaceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/SightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/service/SightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/FoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/FoodServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/GoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/GoodServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/PlaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/PlaceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/SightServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/serviceImpl/SightServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/ajax/commentFormData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/ajax/commentFormData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/ajax/commentRequestPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/ajax/commentRequestPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/downloader/CustomHttpClientDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/downloader/CustomHttpClientDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/ConsolePipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/ConsolePipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/SightPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/SightPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/ToFoodPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/ToFoodPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/ToGoodPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/ToGoodPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/ToSightPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/ToSightPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/persistent/PersistentFoodAndRestaurantPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/persistent/PersistentFoodAndRestaurantPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/persistent/PersistentGoodAndShopPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/persistent/PersistentGoodAndShopPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/persistent/PersistentPlacePipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/persistent/PersistentPlacePipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/pipeline/persistent/PersistentSightPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/pipeline/persistent/PersistentSightPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/FoodProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/FoodProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/GoodProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/GoodProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/PlacesPageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/PlacesPageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/SightPageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/SightPageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/ToFoodProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/ToFoodProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/ToGoodProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/ToGoodProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/webmagic/processor/ToSightPageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/spider/processor/ToSightPageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FoodWithRestaurantMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FoodWithRestaurantMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodWithShopMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodWithShopMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlaceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlaceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RestaurantMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RestaurantMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SightMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SightMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/ActivityController_V2.min.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/AjaxGetCookie.ashx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Globle_young.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/__nts.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/_bfa.min.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/analytics.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/city_sight.v2.0.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/client_you.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/collect.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/common.v2.0.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/country_sightlist.v2.0.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/d.min.661c0503.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/f(1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/f(2).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/f(3).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/f(4).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/f.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/fed.v2.0.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/floating_normal.min.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/marinRedirect.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mask_you.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mba_ctrip.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/pcfloat.min.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/push.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/qCode.min.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/remarketing.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/rms.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/rt.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/s.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/saved_resource" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/saved_resource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/thirdPart.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/yUtil.min.js.下载" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/food.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/food_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/good.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/good_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/place_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/sight.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/sight_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn.edu.guet.zti.web/service/impl/PlaceServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn.edu.guet.zti.web/webmagic/SpiderFood.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn.edu.guet.zti.web/webmagic/SpiderGood.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn.edu.guet.zti.web/webmagic/SpiderSight.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2170,7 +2274,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Vw2Ue9WQZcVBFArZLwmrBaiQIF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -2180,31 +2286,36 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zti_/zti" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/edu/guet/zti/web/controller" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28850573" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\java\cn\edu\guet\zti\web\controller" />
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\webapp\assets" />
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\test" />
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\webapp" />
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\webapp\jsp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\webapp\WEB-INF\jsp" />
+      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\webapp\WEB-INF" />
       <recent name="F:\MyCode\IdeaProjects\crawl\src\test\java" />
-      <recent name="F:\MyCode\IdeaProjects\crawl\src\main" />
-      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\resources" />
-      <recent name="F:\MyCode\IdeaProjects\crawl\src\main\java" />
-      <recent name="F:\MyCode\IdeaProjects\crawl" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 8.5.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/crawl_war_exploded/" />
+    <configuration name="Tomcat 8.5.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.46" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="S:\Java\jdk1.8.0_91\jre" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/crawl/" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="crawl:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/crawl_war_exploded" />
+            <option name="CONTEXT_PATH" value="/crawl" />
           </settings>
         </artifact>
       </deployment>
@@ -2276,7 +2387,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.09562842" />
+          <option name="contentProportion" value="0.012303486" />
           <treeState>
             <expand>
               <path>
@@ -2306,7 +2417,9 @@
       <option name="presentableId" value="Default" />
       <updated>1578149853384</updated>
       <workItem from="1578149854656" duration="3567000" />
-      <workItem from="1578195952149" duration="1834000" />
+      <workItem from="1578195952149" duration="4820000" />
+      <workItem from="1578202775086" duration="2265000" />
+      <workItem from="1578205487100" duration="16777000" />
     </task>
     <task id="LOCAL-00001" summary="完整代码">
       <created>1578153169077</created>
@@ -2322,7 +2435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578153346280</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".idea">
+      <created>1578199938573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578199938573</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2331,17 +2451,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完整代码" />
     <MESSAGE value="WebMagic的单元测试代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebMagic的单元测试代码" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="78" key="#Project_Structure" timestamp="1578150319620">
+    <state x="361" y="78" key="#Project_Structure" timestamp="1578203265977">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="78" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1578150319620" />
-    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578150478760">
+    <state x="361" y="78" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1578203265977" />
+    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578204405141">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1578150478760" />
+    <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1578204405141" />
     <state x="557" y="332" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1578150280920">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -2350,89 +2471,104 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="469" y="345" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1578149961231" />
-    <state x="385" y="13" key="CommitChangelistDialog2" timestamp="1578153338065">
+    <state x="499" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578211175468">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="385" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578153338065" />
+    <state x="499" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1578211175468" />
+    <state x="385" y="13" key="CommitChangelistDialog2" timestamp="1578222528299">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="385" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578222528299" />
     <state x="549" y="161" key="FileChooserDialogImpl" timestamp="1578198878853">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="161" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578198878853" />
-    <state width="1323" height="443" key="GridCell.Tab.0.bottom" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.0.bottom" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.0.center" timestamp="1578153461755">
+    <state width="1445" height="54" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.0.center" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578153461755" />
-    <state width="1323" height="443" key="GridCell.Tab.0.left" timestamp="1578153461755">
+    <state width="1445" height="54" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.0.left" timestamp="1578220968053">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578153461755" />
-    <state width="1323" height="443" key="GridCell.Tab.0.right" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578220968053" />
+    <state width="1445" height="54" key="GridCell.Tab.0.right" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.1.bottom" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.1.bottom" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.1.center" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.1.center" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.1.left" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.1.left" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.1.right" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.1.right" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.2.bottom" timestamp="1578153461757">
+    <state width="1445" height="54" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.2.bottom" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578153461757" />
-    <state width="1323" height="443" key="GridCell.Tab.2.center" timestamp="1578153461757">
+    <state width="1445" height="54" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.2.center" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1578153461757" />
-    <state width="1323" height="443" key="GridCell.Tab.2.left" timestamp="1578153461756">
+    <state width="1445" height="54" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.2.left" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1578153461756" />
-    <state width="1323" height="443" key="GridCell.Tab.2.right" timestamp="1578153461757">
+    <state width="1445" height="54" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.2.right" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1578153461757" />
-    <state width="1323" height="443" key="GridCell.Tab.3.bottom" timestamp="1578152488664">
+    <state width="1445" height="54" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.3.bottom" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578152488664" />
-    <state width="1323" height="443" key="GridCell.Tab.3.center" timestamp="1578152488664">
+    <state width="1445" height="54" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.3.center" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1578152488664" />
-    <state width="1323" height="443" key="GridCell.Tab.3.left" timestamp="1578152488664">
+    <state width="1445" height="54" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.3.left" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1578152488664" />
-    <state width="1323" height="443" key="GridCell.Tab.3.right" timestamp="1578152488664">
+    <state width="1445" height="54" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state width="1445" height="54" key="GridCell.Tab.3.right" timestamp="1578220968054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1323" height="443" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1578152488664" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1578150284791">
+    <state width="1445" height="54" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1578220968054" />
+    <state x="349" y="154" key="IDE.errors.dialog" timestamp="1578203999379">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578150284791" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1578153352750">
+    <state x="349" y="154" key="IDE.errors.dialog/0.0.1536.834@0.0.1536.834" timestamp="1578203999379" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1578210382676">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578153352750" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578210382676" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1578200477552">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578200477552" />
     <state x="564" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578151965418">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="564" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1578151965418" />
+    <state x="449" y="41" key="refactoring.ChangeSignatureDialog" timestamp="1578219142871">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="41" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1578219142871" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/crawl$Tomcat_8_5_46.ic" NAME="Tomcat 8.5.46 Coverage Results" MODIFIED="1578217760676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

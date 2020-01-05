@@ -41,7 +41,7 @@ public class PlaceServiceImpl implements PlaceService {
         for (Place place : places) {
             String pictureName = FileNameUtils.getPictureNameByKeyword(webAppPath, place.getPlaceUrlId(), Constant.SIGHT_KEYWORD, "");
             place.setPicName(pictureName);
-            place.setSightList(sightDao.getSightsByPage(place.getPlaceUrlId(), Constant.START, Constant.TOP_FIVE_PAGE_SIZE));
+            place.setSightList(sightDao.getSightsByPage(place.getPlaceUrlId(), Constant.NOT_A_PLACE, Constant.START, Constant.TOP_FIVE_PAGE_SIZE));
         }
         return places;
     }
@@ -52,7 +52,7 @@ public class PlaceServiceImpl implements PlaceService {
     }
 
     @Override
-    public String getplaceNameByUrlId(String placeUrlId) {
+    public String getPlaceNameByUrlId(String placeUrlId) {
         return placeDao.getplaceNameByUrlId(placeUrlId);
     }
 }

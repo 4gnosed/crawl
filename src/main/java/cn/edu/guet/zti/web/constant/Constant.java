@@ -19,6 +19,7 @@ public class Constant {
     public static final String GOOD_KEYWORD = "good";
     public static final String SHOP_KEYWORD = "shop";
     public static final String RESTAURANT_KEYWORD = "restaurant";
+    public static final String NOT_A_PLACE = null;
     public static final int PLACE_PAGE_SIZE = 10;
     public static final int SIGHT_PAGE_SIZE = 15;
     public static final int COMMENT_PAGE_SIZE = 15;

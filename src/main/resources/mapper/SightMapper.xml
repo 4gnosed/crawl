@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.edu.guet.zti.web.dao.SightDao">
 
-    <resultMap id="sightResultMap" type="Sight">
+    <resultMap id="sightResultMap" type="cn.edu.guet.zti.web.pojo.Sight">
         <id property="sightId" column="sight_id"></id>
         <result property="sightName" column="sight_name"></result>
         <result property="sightUrlId" column="sight_url_id"></result>
@@ -33,11 +33,16 @@
 
     <select id="getSightsByPage" resultType="Sight">
         SELECT * from t_sight where place_url_id=#{placeUrlId}
-        order by score desc
+        <if test="placeName != null">
+            or address like CONCAT('%', #{placeName}, '%')
+        </if>
         limit #{start},#{pageSize};
     </select>
 
-    <select id="getTotalPage" parameterType="java.lang.String" resultType="java.lang.Integer">
-        select count(*) from t_sight where place_url_id =#{placeUrlId};
+    <select id="getTotalPage" resultType="java.lang.Integer">
+        select count(*) from t_sight where place_url_id = #{placeUrlId}
+        <if test="placeName != null">
+            or address like CONCAT('%', #{placeName}, '%')
+        </if>;
     </select>
 </mapper>

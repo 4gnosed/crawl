@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface PlaceDao {
+
     public int addPlace(Place place);
 
     public Place findPlaceById(int placeId);

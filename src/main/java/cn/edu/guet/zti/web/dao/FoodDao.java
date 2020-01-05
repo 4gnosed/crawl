@@ -5,10 +5,12 @@ import cn.edu.guet.zti.web.pojo.Food;
 import java.util.List;
 
 public interface FoodDao {
-    public int addFood(Food food);
+    int addFood(Food food);
 
-    public Food findFoodByUrlId(String foodUrlId);
+    Food findFoodByUrlId(String foodUrlId);
 
-    public List<Food> getFoodsByPlaceUrlId(String placeUrlId);
+    List<Food> getFoodsByPlaceUrlId(String placeUrlId);
+
+    List<Food> selectAll();
 
 }

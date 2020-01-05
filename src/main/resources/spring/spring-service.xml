@@ -14,7 +14,7 @@
     <context:component-scan base-package="cn.edu.guet.zti.web.serviceImpl"/>
 
     <!-- 扫描webmagic.pipeline.persistent包下所有使用注解的类型 -->
-    <context:component-scan base-package="cn.edu.guet.zti.web.webmagic.pipeline.persistent"/>
+    <context:component-scan base-package="cn.edu.guet.zti.web.spider.pipeline.persistent"/>
 
     <!-- 配置事务管理器 -->
     <bean id="transactionManager"
